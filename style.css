@@ -1,6 +1,6 @@
 * {margin: 0;
 
-
+font-family: 'Poppins', sans-serif;
 }
 body
 {
@@ -42,6 +42,7 @@ align-items: center;
     padding: 0px;
 
 
+
 }
 .nav_list>li{
 
@@ -55,7 +56,9 @@ align-items: center;
     border:none;
     background:none;
     padding: 0px;
-  
+    font-weight: 400;
+    font-size: 22px;
+  cursor: pointer;
     
 }
 
@@ -85,12 +88,17 @@ border: none;
 box-shadow: 0px 12px 40px -16px rgba(0, 0, 0, 0.1);
 padding-left: 72px;
 font-size: 22px;
-font-weight: 400px;
+font-weight: 400;
 line-height: 20.86px;
+color: black;
 
 
 
 
+}
+.search_input::placeholder{
+
+    color: black;
 }
 
 
@@ -147,7 +155,8 @@ margin-top: 152px;
     font-weight: 600;
     font-size: 20px;
     line-height: 94.8%;
-    margin-top: 44px;
+    cursor: pointer;
+    
 
 }
 
@@ -156,24 +165,139 @@ margin-top: 152px;
     margin-top: 37px;
 }
 
-.circle{
+.btn_watch_video{
+width: 57px;
+height: 57px;
+background-color: white;
+border-radius: 100%;
+border:none;
+display:flex;
+justify-content: center;
+align-items: center;
 
-    margin-top: 49px;
+
+}
+.btn_watch_video>img{
+
+    margin-left: 3px;
+    cursor: pointer;
+
+}
+
+ 
+.wrapper_order_button{
+
+
+display:flex;
+margin-top: 44px;
+gap: 28px;
+align-items: center;
+cursor: pointer;
+
+
+
+}
+
+
+.text_watch_video{
+
+    font-size: 20px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #2F2F2F;
+    cursor: pointer;
     
- 
- 
- 
- }
 
 
- .mini_logo{
+}
+
+.stars{
+
+
+margin-top: 80px;
+
+}
+
+.text1{
+
+
+    font-weight: 600;
+
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+.container{
+
+margin-left: 5px;
+margin-top: 11px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+
+.search_input_label{
+
+position: relative;
+
+}
+
+.search_input_label::after{
+    content: '2';
+    position:absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    color: white;
+    background-color: red;
+    box-shadow:  0px, 2px
+    rgba(255, 51, 52, 0.72);
+    font-size: 10px;
+    font-weight: 400;
+    top: 6px;
+    right: 18px;
+    z-index: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 
 
+}
 
- }
+.search_input_label::before{
 
- .stars{
+content: '';
+height: 45px;
+width: 1px;
+background-color:grey;
+position:absolute;
+right: 72px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+.search_input_button{
 
 
- }
+position:absolute;
+left: 41px;
+top: 50%;
+transform: translateY(-50%);
+
+}
+
+.search_input_bag{
+
+
+    position:absolute;
+    right: 37.5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    
+
+}
+
